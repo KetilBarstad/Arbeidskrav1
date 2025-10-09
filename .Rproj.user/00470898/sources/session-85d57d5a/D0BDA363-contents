@@ -1,0 +1,148 @@
+library(tidyverse)
+read_csv(strengthvolume_csv)
+library(readxl)
+
+View(strengthvolume)
+
+#Sammenstill mean og SD for maksstyrke i legext og legpress 
+#for hvert tidspunkt, sets og sex. 
+
+
+
+strengthvolume %>%
+  filter(exercise %in% c("legext", "legpress")) %>%
+  ggplot(aes(x = time, y = load, fill = interaction(sex, sets))) +
+  geom_col(position = "dodge", stat = "summary", fun = "mean", alpha = 0.7) +  # Make bars transparent
+  geom_errorbar(stat = "summary", 
+                fun.data = "mean_sd",
+                position = position_dodge(width = 0.9),
+                width = 0.5,
+                linewidth = 1.2,
+                color = "red") +        # Make them RED so you can see them!
+  facet_wrap(~ exercise) +
+  theme_minimal()
+
+Oppgave_10 <- strengthvolume |>
+  filter(exercise %in% c("legext", "legpress",
+                         include == "incl")) |>
+  group_by(exercise, time, sex, sets) |>
+  summarise(
+    mean_load = mean(load, na.rm = TRUE),
+    sd_load = sd(load, na.rm = TRUE),
+    ) |>
+    print(n = 38)
+
+           
+#lag en graf over maksimalstyrke ved  session1 og `post. 
+#Bruk en leg press og differensiere mellom sets
+  Oppgave_14 <- strengthvolume |>
+  filter (exercise == "legpress", 
+  time %in% c("post", "session1")) |>
+  ggplot(aes(x = time, y = load, color = sets, group = sets, shape = sets)) +
+  stat_summary(fun = max, geom = "line", linewidth = 1.2) +
+  stat_summary(fun = max, geom = "point", size = 2.5) +
+  scale_y_continuous(breaks = seq(0, 500, by = 10)) +
+  theme_bw()
+  
+#
+  
+  ggplot(strengthvolume, aes(x = exercise, y = load)) +
+        geom_point(aes()) +
+        geom_smooth(method = "lm")
+  
+ 
+  strengthvolume |>
+    mutate(
+      velocity = case_when(
+        exercise == "isom" ~ 0,
+        exercise == "isok.60" ~ 60,
+        exercise == "isok.120" ~ 120,
+        exercise == "isok.240" ~ 240,
+        TRUE ~ NA_real_
+      )
+    ) |>
+    filter(!is.na(velocity)) |>
+    ggplot(aes(x = velocity, y = load, color = sex)) +
+    geom_point(alpha = 0.6) +
+    geom_smooth(method = "lm", se = TRUE) +
+    facet_wrap(~ time) +
+    labs(
+      title = "Forhold mellom bevegelseshastighet og styrke"
+    ) +
+    theme_bw()
+  
+ Oppgave_15 <- strengthvolume |> 
+    mutate(
+      velocity = case_when(
+        exercise == "isom" ~ 0,
+        exercise == "isok.60" ~ 60,
+        exercise == "isok.120" ~ 120,
+        exercise == "isok.240" ~ 240,
+        TRUE ~ NA_real_
+      )
+    ) |>
+  filter(!is.na(velocity)) |>
+    ggplot(aes(x = velocity, y = load, color = sex)) +
+    geom_point(alpha = 0.6) +
+    geom_smooth(method = "lm", se = TRUE) +
+    facet_wrap(~ time)
+
+ #Bruk millward for ?? visualisere fordelingen av variabelene RNA+ protein syn 
+ #Hvordan er variablene fordelt,beskriv fordelingene 
+ #Gj??r det samme med valgfri data fra strengthvolume
+
+millward <- read.table("millward.txt", header = TRUE)
+
+head(millward)
+str(millward)
+
+Fordeling_av_variabler <- ggplot(millward, aes(x = RNA, y = protein_synthesis, 
+                          color = group, shape = group)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm")  +
+  labs(
+    title = "Forholdet mellom RNA og proteinsyntese"
+  ) +
+  theme_bw()
+
+names(millward)
+unique(millward$group)
+
+#Histogram RNA
+ggplot(millward, aes(x = RNA)) +
+  geom_histogram(bins = 15, fill = "purple", color = "black")
+  
+#Histogram proteinsyntese
+ggplot(millward, aes(x = protein_synthesis)) +
+  geom_histogram(bins= 15, fill = "purple", color = "black")
+
+#Density plot
+ggplot(millward, aes(x = RNA)) +
+  geom_density(alpha = 0.5)
+
+millward |>
+  pivot_longer(cols = c(RNA, protein_synthesis),
+              names_to = "RNA",
+              values_to = "protein_synthesis") |>
+ggplot(aes(x = RNA, y = protein_synthesis)) +
+  geom_boxplot()
+
+millward |>
+  pivot_longer(cols = c(RNA, protein_synthesis),
+               names_to = "variable",     
+               values_to = "value") |>       
+  ggplot(aes(x = variable, y = value, fill = variable)) +
+  geom_boxplot() +
+  facet_wrap(~ variable, scales = "free_y") +
+  labs(title = "Fordeling av RNA og proteinsyntese") +
+  theme_bw()
+
+
+millward |>
+  summary(RNA$protein_synthesis)
+  summary(millward$RNA)
+  summary(millward$protein_synthesis)
+
+
+
+  
