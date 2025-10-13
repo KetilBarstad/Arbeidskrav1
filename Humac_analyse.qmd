@@ -8,7 +8,7 @@ editor: visual
 
 ## Introduksjon
 
-Sprintsyklister er kjennetegnet ved evnen til å kunne produsere høy kraft og akselerasjon over korte distanser på 5 - 10 000 meter, og en avgjørende faktor for prestasjon vil være maksimalkraften i kneekstensjon (kilde). Styrketrening i form av progressiv motstandstrening er en effektiv metode for å øke muskelstyrke, og benyttes ofte i "off-season" perioder av sprintsyklister. Vi ønsker å undersøke effekten av en treningsintervensjon på underekstremitetene på maksimalt dreiemoment i kneekstensorene. Gullstandarden for måling av muskelstyrke er med et isokinetisk dynamometer (kilde), og vi har dermed valgt HUMAC-cybex maskinen (modell her) som måleinstrument. Hypotesen vår er at detalkeren vil ha økt maksimalt dreiemoment i kneekstensjon etter intervensjonen, sammenlignet med pre-test.
+Sprintsyklister er kjennetegnet ved evnen til å kunne produsere høy kraft og akselerasjon over korte distanser på 5 - 10 000 meter, og en avgjørende faktor for prestasjon vil være maksimalkraften i kneekstensjon (kilde). Styrketrening i form av progressiv motstandstrening er en effektiv metode for å øke muskelstyrke, og benyttes ofte i "off-season" perioder av sprintsyklister. Vi ønsket å undersøke effekten av en treningsintervensjon på underekstremitetene på maksimalt dreiemoment i kneekstensorene. Gullstandarden for måling av muskelstyrke er med et isokinetisk dynamometer (kilde), og vi har dermed valgt HUMAC-cybex maskinen (modell her) som måleinstrument. Hypotesen vår er at detakeren vil måle økt maksimalt dreiemoment i kneekstensjon etter intervensjonen, sammenlignet med pre-test.
 
 ## Metode
 
@@ -34,9 +34,9 @@ Forklaring av test + evt. verbale instrukser under testen ...
 
 ### Databehandling
 
-Høyeste maksimale dreiemoment (Nm) fra hver hastighet per test ble tatt med videre til analyse i datasettet vårt.
+Hver test bestod av 1 serie på 3 repetisjoner. Fra hver test ble repetisjonen med høyest målt maksimale dreiemoment (Nm) tatt med til videre analyse.
 
-All analyse ble utført i R (versjon 4.5.1). Data visualisering ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådata fra HUMAC testene ble innhentent fra syv\* av Excel-filene, og importert og prosessert til et "tidy" datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig på GitHub.
+Databehandlingen og analysen ble utført i R (versjon 4.5.1). Data visualisering ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådata fra HUMAC testene ble innhentent fra syv\* av Excel-filene, og importert og prosessert til et "tidy" datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig på GitHub.
 
 *\*Tilvenning fra 16.09.25 ble eksludert fra tidy-datasettet. Grunnen til dette er fordi det ble brukt en annen protokoll enn de syv andre testene, og var dermed ikke sammenlignbart med de andre testene. Pre-test i datasettet er dermed fra 18.09.25.*
 
@@ -45,7 +45,7 @@ library(tidyverse)
 library(readxl)
 ```
 
-```{r import-data, code_fold=TRUE, output=FALSE, message=FALSE, warning=FALSE}
+```{r import-data, code_fold=TRUE, output=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 # Funksjon for å hente data fra én HUMAC-fil 
 extract_humac_data <- function(file_path) {
   
@@ -110,29 +110,29 @@ humac_data <- humac_data %>%
   select(time, everything())
 
 # Tidy datasettet ble lagret som CSV-fil for enkel tilgang til analyse
-write_csv(humac_data, "Data/humac_tidy_data.csv") 
+write_csv(humac_data, "Data/humac_tidy_data.csv")
 ```
 
 ## Resultater
 
 ### Tabell 1: Deltakerens resultater 
 
-| Tidspunkt | Side    | Maksimalt Nm 60°/s | Maksimalt Nm 120°/s | Maksimalt Nm 180°/s |
+| Tidspunkt | Side | Maksimalt Nm 60°/s | Maksimalt Nm 120°/s | Maksimalt Nm 240°/s |
 |------------------|--|-------------------------------|---------------------------------|--------------------------------|
-| Pre-test  | Høyre   | 174                | 159                 | 117                 |
-| Pre-test  | Venstre | 178                | 164                 | 121                 |
-| Test 1    | Høyre   | 187                | 159                 | 111                 |
-| Test 1    | Venstre | 187                | 163                 | 114                 |
-| Test 2    | Høyre   | 224                | 178                 | 123                 |
-| Test 2    | Venstre | 182                | 151                 | 111                 |
-| Test 3    | Høyre   | 216                | 168                 | 126                 |
-| Test 3    | Venstre | 174                | 156                 | 108                 |
-| Test 4    | Høyre   | 207                | 163                 | 117                 |
-| Test 4    | Venstre | 187                | 151                 | 114                 |
-| Test 5    | Høyre   | 203                | 163                 | 113                 |
-| Test 5    | Venstre | 182                | 153                 | 102                 |
-| Test 6    | Høyre   | 218                | 175                 | 118                 |
-| Test 6    | Venstre | 188                | 151                 | 106                 |
+| **Pre-test** | Høyre | 174 | 159 | 117 |
+| **Pre-test** | Venstre | 178 | 164 | 121 |
+| Test 1 | Høyre | 187 | 159 | 111 |
+| Test 1 | Venstre | 187 | 163 | 114 |
+| Test 2 | Høyre | 224 | 178 | 123 |
+| Test 2 | Venstre | 182 | 151 | 111 |
+| Test 3 | Høyre | 216 | 168 | 126 |
+| Test 3 | Venstre | 174 | 156 | 108 |
+| Test 4 | Høyre | 207 | 163 | 117 |
+| Test 4 | Venstre | 187 | 151 | 114 |
+| Test 5 | Høyre | 203 | 163 | 113 |
+| Test 5 | Venstre | 182 | 153 | 102 |
+| **Test 6** | Høyre | 218 | 175 | 118 |
+| **Test 6** | Venstre | 188 | 151 | 106 |
 
 : Det ble utført 3 repetisjoner x 1 serie per hastighet, og tabellen viser høyeste målte dreiemoment per test.
 
@@ -163,24 +163,29 @@ humac_data |>
     axis.text.x = element_blank(),
     axis.ticks.x = element_blank(),
     panel.spacing = unit(1.5, "lines")
-  ) 
+  )
 ```
 
-### Tabell 2: 
+### Tabell 2: Endring fra pre-test til test 6
 
-```{r}
-  
-```
+| Hastighet    | Side     | Endring i Nm og % |
+|--------------|----------|-------------------|
+| 60°/s        | Høyre    | +44 (+25.3%)      |
+| 60&deg;/s    | Venstre  | +10 (+5.6%)       |
+| 120&deg;/s   | Høyre    | +16 (+10.1)       |
+| 120&deg;/s   | Venstre  | -12 (-7.9%)       |
+| 240&deg;/s   | Høyre    | +1 (+0.9%)        |
+| 240&deg;/s   | Venstre  | -15 (-14.2%)      |
 
 ## Diskusjon
-
-### Reliablitet og validitet
 
 ### Metodiske styrker og begrensninger
 
 Valget for innhenting av data med R-kode istedet for å plotte inn dataene manuelt, er for å styrke graden av reproduserbarhet til rapporten vår.
 
 Vi har forsøkt å redusere effekten av konfunderende variabler ved å standardisere så mye av testprosessen som mulig.
+
+SEM (Standard error of measurement) i form av biologiske faktorer og målefeil kan påvirke resultatene med 5 - 10 % (kilde)
 
 ## Referanseliste
 
