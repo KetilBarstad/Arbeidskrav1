@@ -8,17 +8,19 @@ editor: visual
 
 ## Introduksjon
 
-Sprintsyklister er kjennetegnet ved evnen til å kunne produsere høy kraft og akselerasjon over korte distanser på 5 - 10 000 meter, og en avgjørende faktor for prestasjon vil være maksimalkraften i kneekstensjon (kilde). Gullstandarden for måling av muskelstyrke er med et isokinetisk dynamometer (kilde), og vi har dermed valgt HUMAC-cybex ..
+Sprintsyklister er kjennetegnet ved evnen til å kunne produsere høy kraft og akselerasjon over korte distanser på 5 - 10 000 meter, og en avgjørende faktor for prestasjon vil være maksimalkraften i kneekstensjon (kilde). Styrketrening i form av progressiv motstandstrening er en effektiv metode for å øke muskelstyrke, og benyttes ofte i "off-season" perioder av sprintsyklister. Vi ønsker å undersøke effekten av en treningsintervensjon på underekstremitetene på maksimalt dreiemoment i kneekstensorene. Gullstandarden for måling av muskelstyrke er med et isokinetisk dynamometer (kilde), og vi har dermed valgt HUMAC-cybex maskinen (modell her) som måleinstrument. Hypotesen vår er at detalkeren vil ha økt maksimalt dreiemoment i kneekstensjon etter intervensjonen, sammenlignet med pre-test.
 
 ## Metode
 
 ### Deltaker
 
+Deltakeren er en 24 år gammel mann ...
+
 ### Datainnsamling
 
-Deltakeren gjennomførte to tilvenningsøkter (16.09 og 18.09) for å redusere læringseffekten sin innflytelse på resultatene. (kilde)
+Deltakeren gjennomførte to tilvenningsøkter (16.09 og 18.09) for å redusere innflytelse av læringseffekten på resultatene (Hopkins, 2000).
 
-Deltakeren utførte to tester i uken i en periode på tre uker, og vi endte opp med seks tester totalt. Testtidspunktene ble standardisert til tirsdag og torsdag hver uke, og ble utført på samme tidspunkt på døgnet. Deltakerens koffein- og matinntak ble standardisert, for å redusere effekten av konfunderende variabler. Deltakeren utførte treningsprotokollen cirka én time etter hver test, og vi forsikret dermed 48 timers restitusjon mellom hver test.
+Deltakeren utførte to tester i uken i en periode på tre uker, og vi endte opp med seks tester totalt. Testtidspunktene ble standardisert til tirsdag og torsdag hver uke, og ble utført på samme tidspunkt på døgnet. Deltakerens koffein- og matinntak ble også standardisert. Deltakeren utførte treningsprotokollen cirka én time etter hver test, og vi forsikret dermed 48 timers restitusjon mellom hver test.
 
 Oppvarmingsprotokoll ...
 
@@ -34,7 +36,7 @@ Forklaring av test + evt. verbale instrukser under testen ...
 
 Høyeste maksimale dreiemoment (Nm) fra hver hastighet per test ble tatt med videre til analyse i datasettet vårt.
 
-All analyse ble utført i R (versjon 4.5.1). Data visualisering ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådatafra HUMAC testene ble innhentent fra syv\* av Excel-filene, og importert og prosessert til et "tidy" datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig på GitHub. Valget for innhenting av data med R-kode istedet for manuelt, er for å styrke graden av reproduserbarhet til rapporten vår.
+All analyse ble utført i R (versjon 4.5.1). Data visualisering ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådata fra HUMAC testene ble innhentent fra syv\* av Excel-filene, og importert og prosessert til et "tidy" datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig på GitHub.
 
 *\*Tilvenning fra 16.09.25 ble eksludert fra tidy-datasettet. Grunnen til dette er fordi det ble brukt en annen protokoll enn de syv andre testene, og var dermed ikke sammenlignbart med de andre testene. Pre-test i datasettet er dermed fra 18.09.25.*
 
@@ -43,8 +45,7 @@ library(tidyverse)
 library(readxl)
 ```
 
-```{r import_data, code_fold=TRUE, output=FALSE, message=FALSE, warning=FALSE}
-
+```{r import-data, code_fold=TRUE, output=FALSE, message=FALSE, warning=FALSE}
 # Funksjon for å hente data fra én HUMAC-fil 
 extract_humac_data <- function(file_path) {
   
@@ -133,6 +134,54 @@ write_csv(humac_data, "Data/humac_tidy_data.csv")
 | Test 6    | Høyre   | 218                | 175                 | 118                 |
 | Test 6    | Venstre | 188                | 151                 | 106                 |
 
-: Det ble utført 3 repetisjoner per serie per hastighet, og tabellen viser kun høyeste målte dreiemoment per hastighet per test.
+: Det ble utført 3 repetisjoner x 1 serie per hastighet, og tabellen viser høyeste målte dreiemoment per test.
+
+### Figur 1: Linjediagram av resultatene fra Tabell 1
+
+```{r}
+#| echo: false
+humac_data |> 
+  filter(
+    speed %in% c("60", "120", "240")) |>
+  ggplot(aes(x = time, y = Newtonmetres, color = side, group = side)) +
+  facet_wrap(~ speed, ncol = 3) +
+  geom_point(size = 3) +
+  geom_line() +
+  facet_wrap(~ speed, ncol = 3, labeller = labeller(speed = c(
+    "60" = "60 grader/s",
+    "120" = "120 grader/s",
+    "240" = "240 grader/s"
+  ))) +
+  theme_minimal() +
+  labs(
+    title = "Maksimalt dreiemoment over tid",
+    x = "Tid",
+    y = "Maksimalt dreiemoment"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    panel.spacing = unit(1.5, "lines")
+  ) 
+```
+
+### Tabell 2: 
+
+```{r}
+  
+```
+
+## Diskusjon
+
+### Reliablitet og validitet
+
+### Metodiske styrker og begrensninger
+
+Valget for innhenting av data med R-kode istedet for å plotte inn dataene manuelt, er for å styrke graden av reproduserbarhet til rapporten vår.
+
+Vi har forsøkt å redusere effekten av konfunderende variabler ved å standardisere så mye av testprosessen som mulig.
 
 ## Referanseliste
+
+Hopkins WG. Measures of reliability in sports medicine and science. Sports Med. 2000 Jul;30(1):1-15. doi: 10.2165/00007256-200030010-00001. PMID: 10907753.

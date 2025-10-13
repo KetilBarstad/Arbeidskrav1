@@ -115,17 +115,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduksjon" class="level2">
 <h2 class="anchored" data-anchor-id="introduksjon">Introduksjon</h2>
-<p>Sprintsyklister er kjennetegnet ved evnen til å kunne produsere høy kraft og akselerasjon over korte distanser på 5 - 10 000 meter, og en avgjørende faktor for prestasjon vil være maksimalkraften i kneekstensjon (kilde). Gullstandarden for måling av muskelstyrke er med et isokinetisk dynamometer (kilde), og vi har dermed valgt HUMAC-cybex ..</p>
+<p>Sprintsyklister er kjennetegnet ved evnen til å kunne produsere høy kraft og akselerasjon over korte distanser på 5 - 10 000 meter, og en avgjørende faktor for prestasjon vil være maksimalkraften i kneekstensjon (kilde). Styrketrening i form av progressiv motstandstrening er en effektiv metode for å øke muskelstyrke, og benyttes ofte i “off-season” perioder av sprintsyklister. Vi ønsker å undersøke effekten av en treningsintervensjon på underekstremitetene på maksimalt dreiemoment i kneekstensorene. Gullstandarden for måling av muskelstyrke er med et isokinetisk dynamometer (kilde), og vi har dermed valgt HUMAC-cybex maskinen (modell her) som måleinstrument. Hypotesen vår er at detalkeren vil ha økt maksimalt dreiemoment i kneekstensjon etter intervensjonen, sammenlignet med pre-test.</p>
 </section>
 <section id="metode" class="level2">
 <h2 class="anchored" data-anchor-id="metode">Metode</h2>
 <section id="deltaker" class="level3">
 <h3 class="anchored" data-anchor-id="deltaker">Deltaker</h3>
+<p>Deltakeren er en 24 år gammel mann …</p>
 </section>
 <section id="datainnsamling" class="level3">
 <h3 class="anchored" data-anchor-id="datainnsamling">Datainnsamling</h3>
-<p>Deltakeren gjennomførte to tilvenningsøkter (16.09 og 18.09) for å redusere læringseffekten sin innflytelse på resultatene. (kilde)</p>
-<p>Deltakeren utførte to tester i uken i en periode på tre uker, og vi endte opp med seks tester totalt. Testtidspunktene ble standardisert til tirsdag og torsdag hver uke, og ble utført på samme tidspunkt på døgnet. Deltakerens koffein- og matinntak ble standardisert, for å redusere effekten av konfunderende variabler. Deltakeren utførte treningsprotokollen cirka én time etter hver test, og vi forsikret dermed 48 timers restitusjon mellom hver test.</p>
+<p>Deltakeren gjennomførte to tilvenningsøkter (16.09 og 18.09) for å redusere innflytelse av læringseffekten på resultatene (Hopkins, 2000).</p>
+<p>Deltakeren utførte to tester i uken i en periode på tre uker, og vi endte opp med seks tester totalt. Testtidspunktene ble standardisert til tirsdag og torsdag hver uke, og ble utført på samme tidspunkt på døgnet. Deltakerens koffein- og matinntak ble også standardisert. Deltakeren utførte treningsprotokollen cirka én time etter hver test, og vi forsikret dermed 48 timers restitusjon mellom hver test.</p>
 <p>Oppvarmingsprotokoll …</p>
 <p>Testprotokollen …</p>
 <p>Utstyr og innstillinger …</p>
@@ -137,7 +138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="databehandling" class="level3">
 <h3 class="anchored" data-anchor-id="databehandling">Databehandling</h3>
 <p>Høyeste maksimale dreiemoment (Nm) fra hver hastighet per test ble tatt med videre til analyse i datasettet vårt.</p>
-<p>All analyse ble utført i R (versjon 4.5.1). Data visualisering ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådatafra HUMAC testene ble innhentent fra syv* av Excel-filene, og importert og prosessert til et “tidy” datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig på GitHub. Valget for innhenting av data med R-kode istedet for manuelt, er for å styrke graden av reproduserbarhet til rapporten vår.</p>
+<p>All analyse ble utført i R (versjon 4.5.1). Data visualisering ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådata fra HUMAC testene ble innhentent fra syv* av Excel-filene, og importert og prosessert til et “tidy” datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig på GitHub.</p>
 <p><em>*Tilvenning fra 16.09.25 ble eksludert fra tidy-datasettet. Grunnen til dette er fordi det ble brukt en annen protokoll enn de syv andre testene, og var dermed ikke sammenlignbart med de andre testene. Pre-test i datasettet er dermed fra 18.09.25.</em></p>
 <div class="cell" data-code_fold="true">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Funksjon for å hente data fra én HUMAC-fil </span></span>
@@ -213,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="tabell-1-deltakerens-resultater" class="level3">
 <h3 class="anchored" data-anchor-id="tabell-1-deltakerens-resultater">Tabell 1: Deltakerens resultater</h3>
 <table class="caption-top table">
-<caption>Det ble utført 3 repetisjoner per serie per hastighet, og tabellen viser kun høyeste målte dreiemoment per hastighet per test.</caption>
+<caption>Det ble utført 3 repetisjoner x 1 serie per hastighet, og tabellen viser høyeste målte dreiemoment per test.</caption>
 <colgroup>
 <col style="width: 15%">
 <col style="width: 1%">
@@ -332,9 +333,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </section>
+<section id="figur-1-linjediagram-av-resultatene-fra-tabell-1" class="level3">
+<h3 class="anchored" data-anchor-id="figur-1-linjediagram-av-resultatene-fra-tabell-1">Figur 1: Linjediagram av resultatene fra Tabell 1</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Humac_analyse_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="tabell-2" class="level3">
+<h3 class="anchored" data-anchor-id="tabell-2">Tabell 2:</h3>
+</section>
+</section>
+<section id="diskusjon" class="level2">
+<h2 class="anchored" data-anchor-id="diskusjon">Diskusjon</h2>
+<section id="reliablitet-og-validitet" class="level3">
+<h3 class="anchored" data-anchor-id="reliablitet-og-validitet">Reliablitet og validitet</h3>
+</section>
+<section id="metodiske-styrker-og-begrensninger" class="level3">
+<h3 class="anchored" data-anchor-id="metodiske-styrker-og-begrensninger">Metodiske styrker og begrensninger</h3>
+<p>Valget for innhenting av data med R-kode istedet for å plotte inn dataene manuelt, er for å styrke graden av reproduserbarhet til rapporten vår.</p>
+<p>Vi har forsøkt å redusere effekten av konfunderende variabler ved å standardisere så mye av testprosessen som mulig.</p>
+</section>
 </section>
 <section id="referanseliste" class="level2">
 <h2 class="anchored" data-anchor-id="referanseliste">Referanseliste</h2>
+<p>Hopkins WG. Measures of reliability in sports medicine and science. Sports Med. 2000 Jul;30(1):1-15. doi: 10.2165/00007256-200030010-00001. PMID: 10907753.</p>
 </section>
 
 </main>
