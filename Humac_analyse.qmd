@@ -8,9 +8,9 @@ editor: visual
 
 ## Introduksjon
 
-Sprintsyklister er kjennetegnet ved evnen til å produsere høy kraft og akselerasjon over korte distanser (200 - 1000m), og en avgjørende faktor for prestasjon vil være maksimal kraft i kneekstensjon (Martin et al., 2007; Rønnestad et al., 2010). Vi ser også at det er en sterk sammenheng mellom prestasjon i sykkelidrett og muskelmasse i øvre lår (Dorel et al., 2005; Rønnestad et al., 2010). Det vil dermed være naturlig for en sprintsyklist å utføre trening for å øke muskelstyrken i kombinasjon med sin vanlige sykkeltrening. Styrketrening i form av progressiv motstandstrening er en effektiv metode for å øke muskelstyrke, og benyttes ofte av sprintsyklister i periodene mellom konkurransestevner (Rønnestad et al., 2010).
+Sprintsyklister er kjennetegnet ved evnen til å produsere høy kraft og akselerasjon over korte distanser (200 - 1000m), og en avgjørende faktor for prestasjon vil være maksimal kraft i kneekstensjon (Martin et al., 2007; Rønnestad et al., 2015). Vi ser også at det er en sterk sammenheng mellom prestasjon i sykkelidrett og muskelmasse i øvre lår (Dorel et al., 2005; Rønnestad et al., 2015). Det vil dermed være naturlig for en sprintsyklist å utføre trening for å øke muskelstyrken i kombinasjon med sin vanlige sykkeltrening. Styrketrening i form av progressiv motstandstrening er en effektiv metode for å øke muskelstyrke, og benyttes ofte av sprintsyklister i periodene mellom konkurransestevner (Rønnestad et al., 2015).
 
-Vi ønsket å undersøke effekten av en treningsintervensjon på underekstremitetene på maksimalt dreiemoment i kneekstensorene. Gullstandarden for måling av muskelstyrke er et isokinetisk dynamometer (Stark et al., 2011), og vi benyttet HUMAC-Cybex dynamometeret (HUMAC NORM, Computer Sports Medicine Inc., USA) som måleinstrument. Med dette som bakgrunn utførte vi en case-studie av en 24 år gammel nasjonal elitesprintsyklist som var i en fase mellom konkurransestevner, og trente progressiv styrketrening av underekstremitetene i 3 uker Samtidig testet vi deltakerens maksimale dreiemoment i kneekstensjon i tre forskjellige hastigheter; 60 &deg;/s, 120 &deg;/s og 240 &deg;/s.
+Vi ønsket å undersøke effekten av en treningsintervensjon på underekstremitetene på maksimalt dreiemoment i kneekstensorene. Gullstandarden for måling av muskelstyrke er et isokinetisk dynamometer (Stark et al., 2011), og vi benyttet HUMAC-Cybex dynamometeret (HUMAC NORM, Computer Sports Medicine Inc., USA) som måleinstrument. Med dette som bakgrunn utførte vi en case-studie av en 24 år gammel nasjonal elitesprintsyklist som var i en fase mellom konkurransestevner, og trente progressiv styrketrening av underekstremitetene i 3 uker Samtidig testet vi deltakerens maksimale dreiemoment i kneekstensjon i tre forskjellige hastigheter; 60 °/s, 120 °/s og 240 °/s.
 
 Hypotesen vår er at deltakeren vil måle økt maksimalt dreiemoment i kneekstensjon etter intervensjonen, sammenlignet med pre-test.
 
@@ -18,13 +18,13 @@ Hypotesen vår er at deltakeren vil måle økt maksimalt dreiemoment i kneeksten
 
 ### Deltakeren
 
-Deltakeren var en 24 år gammel nasjonal elitesprintsyklist (høyde: , vekt: 69 kg) som var i en fase mellom konkurransestevner. Deltakeren hadde x år med erfaring som elitesprintersyklist, og trente x timer per uke ved studieoppstart. Han hadde tidligere erfaring med progressiv styrketrening, men han hadde ikke trent styrketrening på \> 6 måneder. Han hadde også tidligere erfaring med øvelsene som ble utført i intervensjonen.
+Deltakeren var en 24 år gammel nasjonal elitesprintsyklist (høyde: 165cm, vekt: 64 kg). Prosjektoppstart var 10 dager etter siste sykkelritt. Deltakeren hadde 3 år med erfaring som elitesprintersyklist, og trente minimalt de 10 dagene etter ritt, da deltager hadde en pause før studieoppstart. Han hadde tidligere erfaring med progressiv styrketrening, men han hadde ikke trent styrketrening på \> 6 måneder. Han hadde også tidligere erfaring med øvelsene som ble utført i intervensjonen.
 
 Deltakeren rapporterte ingen kontraindikasjoner eller skader ved studieoppstart.
 
 ### Standardisering og familiarisering
 
-Deltakeren gjennomførte to tilvenningsøkter (16.09 og 18.09) for å redusere innflytelse av læringseffekten på resultatene (Hopkins, 2000).
+Deltakeren gjennomførte to tilvenningstester (16.09 og 18.09) for å redusere innflytelse av læringseffekten på resultatene (Hopkins, 2000).
 
 Deltakeren utførte to tester i uken i en periode på tre uker, og vi endte opp med seks tester totalt. Testtidspunktene ble standardisert til tirsdag og torsdag hver uke, og ble utført på samme tidspunkt på døgnet for å redusere innflytelsen av døgnrytmen. Deltakerens koffein- og matinntak ble standardisert. Deltakeren utførte treningsprotokollen cirka én time etter hver test, og han hadde 48 timers restitusjon mellom hver test.
 
@@ -38,19 +38,19 @@ Testen kunne avbrytes hvis deltakeren opplevde sterkt ubehag eller smerte.
 
 Oppvarmingen bestod av 10 minutter med progressiv ergometersykling. Motstanden på ergometersykelen ble styrt av deltakeren.
 
-Testprotokollen vår tok utgangspunkt i "ReLieF"-protokollen. Denne protokollen har en innebygd oppvarming, og tester maksimalt dreiemoment i tre forskjellige vinkelhastigheter (60 &deg;/s, 120 &deg;/s og 240 &deg;/s). Deltakeren utførte maksimal konsentrisk kneekstensjon fra 90&deg; knefleksjon til 0&deg; kneekstensjon. Protokollen har også en egen oppvarming og testing av maksimal isometrisk kneekstensjon, men deltakeren utførte ikke denne delen av protokollen siden vi kun ønsket å undersøke isokinetisk kneekstensjon.
+Testprotokollen vår tok utgangspunkt i "ReLieF"-protokollen. Denne protokollen har en innebygd oppvarming, og tester maksimalt dreiemoment i tre forskjellige vinkelhastigheter (60 °/s, 120 °/s og 240 °/s). Deltakeren utførte maksimal konsentrisk kneekstensjon fra 90° knefleksjon til 0° kneekstensjon. Protokollen har også en egen oppvarming og testing av maksimal isometrisk kneekstensjon, men deltakeren utførte ikke denne delen av protokollen siden vi kun ønsket å undersøke isokinetisk kneekstensjon.
 
-#### Tabell 1: Modifisert ReLieF protokoll 
+#### Tabell 1: Modifisert ReLieF protokoll
 
 *Alle oppvarmingene og testene starter med høyre ben*
 
 | Hastighet | Oppvarming | Pause mellom oppvarming og test | Test | Pause mellom test (sekunder) |
-|----|----|----|----|----|
-| 60 &deg;/ | 3 | 30 | 3 | 60 |
-| 120 &deg;/ | 3 | 30 | 3 | 60 |
-| 240 &deg;/ | 3 | 30 | 3 | 60 |
+|---------------|---------------|---------------|---------------|---------------|
+| 60 °/ | 3 | 30 | 3 | 60 |
+| 120 °/ | 3 | 30 | 3 | 60 |
+| 240 °/ | 3 | 30 | 3 | 60 |
 
-### Treningsprogrammet 
+### Treningsprogrammet
 
 Oppstartstidspunktet for intervensjonen var x.09.25, x antall dager etter første pre-test (16.09.25)
 
@@ -62,19 +62,13 @@ Tempo under utførelse av øvelsene, samt pauser mellom serier ble styrt selv av
 
 *\*RIR = Repetisjoner i reserve (før utmattelse)*
 
-+------------------------+---------------+----------------------+---------------+
-| Øvelse                 | Serier        | Repetisjonsområde    | RIR\*         |
-+========================+===============+======================+===============+
-| Knebøy med stang       | 3             | 6 - 8                | 2             |
-+------------------------+---------------+----------------------+---------------+
-| Kneekstensjon i maskin | 3             | 6 - 8                | 1             |
-+------------------------+---------------+----------------------+---------------+
-| Leg curl               | 3             | 6 - 8                | 3             |
-+------------------------+---------------+----------------------+---------------+
-| Bulgarske utfall       | 3             | 6 - 8                | 2             |
-+------------------------+---------------+----------------------+---------------+
-| Tåhev                  | 3             | 6 - 8                | 3             |
-+------------------------+---------------+----------------------+---------------+
+| Øvelse                 | Serier | Repetisjonsområde | RIR\* |
+|------------------------|--------|-------------------|-------|
+| Knebøy med stang       | 3      | 6 - 8             | 2     |
+| Kneekstensjon i maskin | 3      | 6 - 8             | 1     |
+| Leg curl               | 3      | 6 - 8             | 3     |
+| Bulgarske utfall       | 3      | 6 - 8             | 2     |
+| Tåhev                  | 3      | 6 - 8             | 3     |
 
 ### Databehandling
 
@@ -155,43 +149,30 @@ humac_data <- humac_data %>%
 
 # Tidy datasettet ble lagret som CSV-fil for enkel tilgang til analyse
 write_csv(humac_data, "Data/humac_tidy_data.csv")
+
+
 ```
 
 ## Resultater
 
-### Tabell 2: Deltakerens resultater
+### Tabell 3: Deltakerens resultater
 
-+--------------+------------+--------------------+---------------------+---------------------+
-| Tidspunkt    | Side       | Maksimalt Nm 60°/s | Maksimalt Nm 120°/s | Maksimalt Nm 240°/s |
-+==============+============+====================+=====================+=====================+
-| **Pre-test** | Høyre      | 174                | 159                 | 117                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| **Pre-test** | Venstre    | 178                | 164                 | 121                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 1       | Høyre      | 187                | 159                 | 111                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 1       | Venstre    | 187                | 163                 | 114                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 2       | Høyre      | 224                | 178                 | 123                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 2       | Venstre    | 182                | 151                 | 111                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 3       | Høyre      | 216                | 168                 | 126                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 3       | Venstre    | 174                | 156                 | 108                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 4       | Høyre      | 207                | 163                 | 117                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 4       | Venstre    | 187                | 151                 | 114                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 5       | Høyre      | 203                | 163                 | 113                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| Test 5       | Venstre    | 182                | 153                 | 102                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| **Test 6**   | Høyre      | 218                | 175                 | 118                 |
-+--------------+------------+--------------------+---------------------+---------------------+
-| **Test 6**   | Venstre    | 188                | 151                 | 106                 |
-+--------------+------------+--------------------+---------------------+---------------------+
+| Tidspunkt | Side | Maksimalt Nm 60°/s | Maksimalt Nm 120°/s | Maksimalt Nm 240°/s |
+|--------------|--------------|--------------|--------------|--------------|
+| **Pre-test** | Høyre | 174 | 159 | 117 |
+| **Pre-test** | Venstre | 178 | 164 | 121 |
+| Test 1 | Høyre | 187 | 159 | 111 |
+| Test 1 | Venstre | 187 | 163 | 114 |
+| Test 2 | Høyre | 224 | 178 | 123 |
+| Test 2 | Venstre | 182 | 151 | 111 |
+| Test 3 | Høyre | 216 | 168 | 126 |
+| Test 3 | Venstre | 174 | 156 | 108 |
+| Test 4 | Høyre | 207 | 163 | 117 |
+| Test 4 | Venstre | 187 | 151 | 114 |
+| Test 5 | Høyre | 203 | 163 | 113 |
+| Test 5 | Venstre | 182 | 153 | 102 |
+| **Test 6** | Høyre | 218 | 175 | 118 |
+| **Test 6** | Venstre | 188 | 151 | 106 |
 
 : Det ble utført 3 repetisjoner x 1 serie per hastighet, og tabellen viser høyeste målte dreiemoment per test.
 
@@ -225,7 +206,7 @@ humac_data |>
   )
 ```
 
-### Tabell 3: Endring fra pre-test til test 6
+### Tabell 4: Endring fra pre-test til test 6
 
 | Hastighet | Side    | Endring i Nm og % |
 |-----------|---------|-------------------|
@@ -235,6 +216,42 @@ humac_data |>
 | 120°/s    | Venstre | -12 (-7.9%)       |
 | 240°/s    | Høyre   | +1 (+0.9%)        |
 | 240°/s    | Venstre | -15 (-14.2%)      |
+
+### Variasjonskoeffisient
+
+Variasjonskoeffisienten (VK) beskriver spredningen av data relativt til gjenomsnittet (Atkinson & Nevill, 1988). I vår studie kan VK være et nyttig verktøy for å vurdere konsistensen til målingene til deltakeren i maksimalt dreiemoment mellom de syv ulike testene. En lav VK (\<5%) vil indikere høy konsistens mellom målingene, mens en høy VK (\>10%) vil indikere større variasjon mellom målingene.
+
+```{r}
+#| include: false
+#Følgende skript regner ut gjennomsnitt, standardavvik
+#og VK og blir plottet i tabell 5
+
+humac_data |>
+  group_by(side, speed) |>
+  summarise(
+    mean_Nm = mean(as.numeric(Newtonmetres), na.rm = TRUE),
+  sd_Nm = sd(as.numeric(Newtonmetres), na.rm = TRUE),
+  VK_prosent = (sd_Nm/mean_Nm)*100,
+  .groups = "drop"
+  ) 
+```
+
+#### Tabell 5: Variasjonskoeffisient fra pre-test til test 6
+
+| Hastighet  | Side    | Gjennomsnitt (Nm) | SD (Nm) | CV(%) |
+|------------|---------|-------------------|---------|-------|
+| 60&deg;/s  | Høyre   | 204               | 18      | 8.81  |
+| 60&deg;/s  | Venstre | 183               | 5.22    | 2.86  |
+| 120&deg;/s | Høyre   | 166               | 7.57    | 4.55  |
+| 120&deg;/s | Venstre | 156               | 5.71    | 3.67  |
+| 240&deg;s  | Høyre   | 118               | 5.24    | 4.45  |
+| 240&deg;s  | Venstre | 111               | 6.23    | 5.62  |
+
+### Limb symmetry index 
+
+"Limb symmetry index" (LSI) er et forholdstall mellom verdien til den svakere ekstremiteten og den sterkere ekstremiteten, multiplisert med 100 for å uttrykke forholdet som en prosent (Impellizeri et al., 2008). Følgende verdier blir kalkulert med formelen (svakere ben / sterkere ben) \* 100 for hver test.
+
+Ved pre-test, viste høyre ben et marginalt høyere maksimalt dreiemoment enn venstre (LSI = 97,7% ved 60 &deg;/s). Etter treningsperioden, ble styrkeforskjellen betraktelig større mellom høyre og venstre ben (LSI = 86,2% ved 60 &deg;/s).
 
 ## Diskusjon
 
@@ -248,9 +265,13 @@ SEM (Standard error of measurement) i form av biologiske faktorer og målefeil k
 
 ## Referanseliste
 
+Atkinson, G., & Nevill, A. M. (1998). Statistical methods for assessing measurement error (reliability) in variables relevant to sports medicine. *Sports Medicine, 26*(4), 217–238. https://doi.org/10.2165/00007256-199826040-00002
+
 Dorel S, Hautier CA, Rambaud O, Rouffet D, Van Praagh E, Lacour JR, Bourdin M. Torque and power-velocity relationships in cycling: relevance to track sprint performance in world-class cyclists. Int J Sports Med. 2005 Nov;26(9):739-46. doi: 10.1055/s-2004-830493. PMID: 16237619.
 
 Hopkins WG. Measures of reliability in sports medicine and science. Sports Med. 2000 Jul;30(1):1-15. doi: 10.2165/00007256-200030010-00001. PMID: 10907753.
+
+Impellizzeri, F. M., Bizzini, M., Rampinini, E., Cereda, F., & Maffiuletti, N. A. (2008)**.** Reliability of isokinetic strength imbalance ratios measured using the Cybex NORM dynamometer. *Clinical Physiology and Functional Imaging, 28*(2), 113–119. https://doi.org/10.1111/j.1475-097X.2007.00786.x
 
 Martin, J. C., Davidson, C. J., & Pardyjak, E. R. (2007). Understanding sprint-cycling performance: The integration of muscle power, resistance, and modeling. *International Journal of Sports Physiology and Performance, 2*(1), 5-21. <https://doi.org/10.1123/ijspp.2.1.5>
 
