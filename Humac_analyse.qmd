@@ -236,7 +236,7 @@ humac_data |>
   ) 
 ```
 
-#### Tabell 5: Variasjonskoeffisient fra pre-test til test 6
+#### Tabell 5: Variasjonskoeffisient mellom testene 
 
 | Hastighet  | Side    | Gjennomsnitt (Nm) | SD (Nm) | CV(%) |
 |------------|---------|-------------------|---------|-------|
