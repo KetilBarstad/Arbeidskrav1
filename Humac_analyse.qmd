@@ -77,11 +77,11 @@ Tempo under utførelse av øvelsene, samt pauser mellom serier ble styrt selv av
 
 ### Databehandling
 
-Fra hver test ble repetisjonen med høyest målt maksimale dreiemoment (Nm) brukt til statistisk analyse.
+Etter hver test ble rådataene lagret automatisk i HUMAC-Cybex programmet. Rådatene ble overført til en ekstern minnepinne. Fra hver test ble repetisjonen med høyest målt maksimale dreiemoment (Nm) brukt til statistisk analyse.
 
-Databehandlingen og analysen ble utført i R (versjon 4.5.1). Datavisualiseringen ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådata fra HUMAC testene ble innhentet fra syv Excel-filer, og importert og prosessert til et "tidy" datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig i GitHub-repositoriet sammen med rådataene.
+Databehandlingen og analysen ble utført i R (versjon 4.5.1). Datavisualiseringen ble utført ved hjelp av tidyverse- og readxl-pakken i Rstudio. Rådata fra HUMAC testene ble innhentet fra seks Excel-filer, og importert og prosessert til et "tidy" datasett ved hjelp av R-kode. Koden for prosesseringen er inkludert i Quarto-dokumentet og tilgjengelig i GitHub-repositoriet sammen med rådataene.
 
-***Merk:** Tilvenning fra 16.09.25 ble ekskludert fra tidy-datasettet. Denne tilvenningen brukte en annen protokoll enn de syv andre testene, og var dermed ikke sammenlignbar med test 1 til 6. Pre-test i datasettet er dermed fra 18.09.25.*
+***Merk:** Tilvenningstest fra 16.09.25 og 18.09.25 ble ekskludert fra tidy-datasettet. Formålet med tilvenningstestene var å redusere innflytelsen av læringseffekten på resultatene. Pre-test i datasettet er dermed fra 23.09.25.*
 
 ```{r setup, include=FALSE}
 library(tidyverse)
