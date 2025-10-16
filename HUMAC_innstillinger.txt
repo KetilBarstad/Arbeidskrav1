@@ -1,0 +1,19 @@
+# HUMAC-Cybex innstillinger
+
+Venstre og høyre ben hadde samme innstillinger:
+
+Rotation scale: 40 
+Back angle: 85
+Fore/Aft position: 20
+Back translation: 22
+
+## Dynamometer
+
+Dyna tilt: 0
+Dyna height: 8
+Dyna rotation: 40
+Monorail: 38
+Length: 28
+
+Sikkerhetsklaffer: J og V 
+Range-of-motion (ROM): 90 grader knefleksjon og 0 grader kneekstensjon
