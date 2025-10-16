@@ -260,13 +260,13 @@ Ved pre-test, målte høyre og venstre ben symmetrisk maksimalt dreiemoment (LSI
 
 Formålet med denne studien var å undersøke effekten av tre uker styrketrening på maksimalt dreiemoment i kneekstensjon hos en elitesprintsyklist. Resultatene viste en økning i maksimalt dreiemoment ved lav vinkelhastighet (60°/s), spesielt for høyre ben (+25,3 %), mens endringene ved høyere hastigheter (120°/s og 240°/s) var små eller negative. Disse funnene støtter delvis hypotesen om at styrketrening øker maksimal styrke, men effekten ser ut til å være spesifikk for lavere bevegelseshastigheter.
 
-#### Sammenheng med tidligere forskning
+### Sammenheng med tidligere forskning
 
 Økningen i dreiemoment ved lav hastighet stemmer godt overens med tidligere studier som viser at tung styrketrening forbedrer maksimal muskelstyrke og kraftutvikling, (Rønnestad et al., 2010). Rønnestad et al. (2010) viste at veltrente syklister som kombinerte styrketrening med utholdenhetstrening økte både muskelstyrke og størrelse på quadriceps, i tillegg forbedret prestasjon relatert til sprint. Martin et al. (2007) fremhever at sprintsyklistens prestasjon er avhengig av samhandlingen mellom muskelkraft og bevegelseshastighet, og at økt maksimal kraft i kneekstensjon kan bidra til høyere akselerasjon og topphastighet i banen. Dermed kan styrke økningene ved 60°/s ha en overføringsverdi til akselerasjonsfasen i sprintsykling.
 
 At økningene falt bort ved høyere vinkelhastigheter (120°/s og 240°/s) samsvarer med tidligere funn fra Dorel et al. (2005), som viste at sammenhengen mellom dreiemoment og hastighet er ikke-lineær, og at maksimalt dreiemoment reduseres når bevegelseshastigheten øker. For å forbedre prestasjon ved høyere hastigheter kreves ofte mer spesifikk trening som eksplosiv styrketrening, og hastighetsbasert styrke eller plyometriske øvelser (Cormie et al., 2011) (legg til denne i literrautlista)
 
-#### Metodiske styrker og begrensninger
+### Metodiske styrker og begrensninger
 
 Reliabilitet handler om hvor pålitelig og konsistent et måleverktøy, altså om det gir samme resultat ved gjentatte tester under standardiserte forhold. HUMAC isokinetisk dynamometer har vist høy test–retest reliabilitet og intrarater reliabilitet ved måling av styrke i underekstremitetene. Og er kjent som gullstandarden (Stark et al., 2011). Dette betyr at apparatet kan gi stabile målinger under standardiserte forhold.
 
