@@ -158,7 +158,7 @@ write_csv(humac_data, "Data/humac_tidy_data.csv")
 ### Tabell 3: Deltakerens resultater
 
 | Tidspunkt | Side | Maksimalt Nm 60°/s | Maksimalt Nm 120°/s | Maksimalt Nm 240°/s |
-|--------------|--------------|--------------|--------------|--------------|
+|---------------|---------------|---------------|---------------|---------------|
 | **Pre-test** | Høyre | 174 | 159 | 117 |
 | **Pre-test** | Venstre | 178 | 164 | 121 |
 | Test 1 | Høyre | 187 | 159 | 111 |
@@ -236,32 +236,56 @@ humac_data |>
   ) 
 ```
 
-#### Tabell 5: Variasjonskoeffisient mellom testene 
+#### Tabell 5: Variasjonskoeffisient mellom testene
 
-| Hastighet  | Side    | Gjennomsnitt (Nm) | SD (Nm) | CV(%) |
-|------------|---------|-------------------|---------|-------|
-| 60&deg;/s  | Høyre   | 204               | 18      | 8.81  |
-| 60&deg;/s  | Venstre | 183               | 5.22    | 2.86  |
-| 120&deg;/s | Høyre   | 166               | 7.57    | 4.55  |
-| 120&deg;/s | Venstre | 156               | 5.71    | 3.67  |
-| 240&deg;s  | Høyre   | 118               | 5.24    | 4.45  |
-| 240&deg;s  | Venstre | 111               | 6.23    | 5.62  |
+| Hastighet | Side    | Gjennomsnitt (Nm) | SD (Nm) | CV(%) |
+|-----------|---------|-------------------|---------|-------|
+| 60°/s     | Høyre   | 204               | 18      | 8.81  |
+| 60°/s     | Venstre | 183               | 5.22    | 2.86  |
+| 120°/s    | Høyre   | 166               | 7.57    | 4.55  |
+| 120°/s    | Venstre | 156               | 5.71    | 3.67  |
+| 240°s     | Høyre   | 118               | 5.24    | 4.45  |
+| 240°s     | Venstre | 111               | 6.23    | 5.62  |
 
-### Limb symmetry index 
+### Limb symmetry index
 
 "Limb symmetry index" (LSI) er et forholdstall mellom verdien til den svakere ekstremiteten og den sterkere ekstremiteten, multiplisert med 100 for å uttrykke forholdet som en prosent (Impellizeri et al., 2008). Følgende verdier blir kalkulert med formelen (svakere ben / sterkere ben) \* 100 for hver test.
 
-Ved pre-test, viste høyre ben et marginalt høyere maksimalt dreiemoment enn venstre (LSI = 97,7% ved 60 &deg;/s). Etter treningsperioden, ble styrkeforskjellen betraktelig større mellom høyre og venstre ben (LSI = 86,2% ved 60 &deg;/s).
+Ved pre-test, viste høyre ben et marginalt høyere maksimalt dreiemoment enn venstre (LSI = 97,7% ved 60 °/s). Etter treningsperioden, ble styrkeforskjellen betraktelig større mellom høyre og venstre ben (LSI = 86,2% ved 60 °/s).
 
 ## Diskusjon
 
-### Metodiske styrker og begrensninger
+### \## Diskusjon
 
-Valget for innhenting av data med R-kode istedet for å plotte inn dataene manuelt, er for å styrke graden av reproduserbarhet til rapporten vår.
+Formålet med denne studien var å undersøke effekten av tre uker styrketrening på maksimalt dreiemoment i kneekstensjon hos en elitesprintsyklist. Resultatene viste en økning i maksimalt dreiemoment ved lav vinkelhastighet (60°/s), spesielt for høyre ben (+25,3 %), mens endringene ved høyere hastigheter (120°/s og 240°/s) var små eller negative. Disse funnene støtter delvis hypotesen om at styrketrening øker maksimal styrke, men effekten ser ut til å være spesifikk for lavere bevegelseshastigheter.
 
-Vi har forsøkt å redusere effekten av konfunderende variabler ved å standardisere så mye av testprosessen som mulig.
+Sammenheng med tidligere forskning
 
-SEM (Standard error of measurement) i form av biologiske faktorer og målefeil kan påvirke resultatene med 5 - 10 % (kilde)
+Økningen i dreiemoment ved lav hastighet stemmer godt overens med tidligere studier som viser at tung styrketrening forbedrer maksimal muskelstyrke og kraftutvikling, (Rønnestad et al., 2010). Rønnestad et al. (2010) viste at veltrente syklister som kombinerte styrketrening med utholdenhetstrening økte både muskelstyrke og størrelse på quadriceps, i tillegg forbedret prestasjon relatert til sprint. Martin et al. (2007) fremhever at sprintsyklistens prestasjon er avhengig av samhandlingen mellom muskelkraft og bevegelseshastighet, og at økt maksimal kraft i kneekstensjon kan bidra til høyere akselerasjon og topphastighet i banen. Dermed kan styrke økningene ved 60°/s ha en overføringsverdi til akselerasjonsfasen i sprintsykling.
+
+At økningene falt bort ved høyere vinkelhastigheter (120°/s og 240°/s) samsvarer med tidligere funn fra Dorel et al. (2005), som viste at sammenhengen mellom dreiemoment og hastighet er ikke-lineær, og at maksimalt dreiemoment reduseres når bevegelseshastigheten øker. For å forbedre prestasjon ved høyere hastigheter kreves ofte mer spesifikk trening som eksplosiv styrketrening, og hastighetsbasert styrke eller plyometriske øvelser (Cormie et al., 2011) (legg til denne i literrautlista)
+
+\### Metodiske styrker og begrensninger
+
+Reliabilitet handler om hvor pålitelig og konsistent et måleverktøy, altså om det gir samme resultat ved gjentatte tester under standardiserte forhold. HUMAC isokinetisk dynamometer har vist høy test–retest reliabilitet og intrarater reliabilitet ved måling av styrke i underekstremitetene. Og er kjent som gullstandarden (Stark et al., 2011). Dette betyr at apparatet kan gi stabile målinger under standardiserte forhold.
+
+I denne casestudien ble det gjort seks tester med samme testleder, under standardiserte betingelser med lik oppvarming, samme tidspunkt på dagen og ernæring. Dette bidrar til høy intrarater reliabilitet.
+
+Totalt sett viser analysen at deltakerens maksimale dreiemoment ble målt på en konsistent måte gjennom testene. Et moderat SD under 10 % anses som akseptabelt i isokinetiske tester (Hopkins, 2000), og funnene i denne studien støtter at målingene var både stabile og pålitelige gjennom hele testperioden.
+
+Validitet refererer til hvor godt en test måler det den er ment å måle. HUMAC isokinetisk dynamometer har vist høy validitet for måling av muskelstyrke i underekstremitetene, noe som betyr at målingene reflekterer faktisk kraftproduksjon i muskelen.
+
+I denne case-studien gir HUMAC mulighet til å registrere både små og store endringer i muskelstyrke over tid, slik som økningen i kneekstensjon på høyre ben ved 60°/s (+25,3 %). Selv om mindre endringer eller negative verdier kan forekomme. Slik som den observerte økningen i kneekstensjon på høyre ben. Variasjonen som ble observert, på venstre ben ved høyere, kan tilskrives biologisk variasjon, tretthet og rekkefølgen på testene, men det påvirker ikke validiteten til apparatet.
+
+Variabilitet beskriver hvor mye måleresultatene sprer seg rundt et gjennomsnitt, og er en viktig faktor å vurdere når man tolker endringer i styrke over tid.
+
+I denne case-studien med seks tester hos en elitesprint syklist var variasjonen størst på venstre bein ved høyere hastigheter, mens høyre bein viste relativt små variasjoner, spesielt ved 60°/s (+25,3 %). Dette indikerer at målingene på høyre bein hadde lavere intra-subjekt variabilitet, det kan hende venstre bein kan ha vært mer påvirket av at venstre beinet ble testet etter høyre i hver av seks testene.
+
+Standardavvik (SD) og variasjonskoeffisient (CV) ble brukt for å vurdere konsistensen i målingene mellom testene for både høyre og venstre bein. SD gir et mål på den absolutte spredningen rundt gjennomsnittet, mens CV uttrykker denne spredningen relativt til gjennomsnittet.
+
+Som vist i tabell 5, var både SD og CV generelt lave for begge bein, noe som indikerer at målingene var stabile og repeterbare. Dette tyder på høy reliabilitet i testprotokollen, spesielt ved hastigheter der CV var rundt 5 %. Enkelte hastigheter viste en noe høyere CV, noe som kan skyldes naturlige variasjoner i prestasjon, teknikk eller tretthet.
+
+Likevel finnes det flere begrensninger. For det første ble studien gjennomført på én deltaker, noe som gjør resultatene ikke-generaliserbare. For det andre ble det ikke inkludert noen form kontrollgruppe, og eventuelle forbedringer kan være vanskelig å skille fra læringseffekten. Selv om deltager gjennomførte to tilvenningsøkter (Hopkins, 2000). I tillegg var intervensjonsperioden relativt kort (tre uker) og det gjør det vanskeligere å diktere forbedringer i styrke, det er sannsynlig at en lengre periode ville gitt større forbedringer og en bedre kraftproduksjon.
 
 ## Referanseliste
 
