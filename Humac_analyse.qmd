@@ -123,7 +123,8 @@ extract_humac_data <- function(file_path) {
 
 # Finn alle HUMAC-filer (ekskluderer første tilvenning fra 16/09)
 humac_files <- list.files("Data/", pattern = "HUMAC.*\\.xlsx", full.names = TRUE) %>%
-  str_subset("16092025", negate = TRUE)
+  str_subset("16092025", negate = TRUE) |>
+  str_subset("18092025", negate = TRUE)
 
 humac_data <- map_df(humac_files, possibly(extract_humac_data, otherwise = NULL))
 
@@ -131,17 +132,16 @@ humac_data <- map_df(humac_files, possibly(extract_humac_data, otherwise = NULL)
 humac_data <- humac_data %>%
   mutate(
     time_point = case_when(
-      test_date == as.Date("2025-09-18") ~ "Pre-test",
-      test_date == as.Date("2025-09-23") ~ "Test 1",
-      test_date == as.Date("2025-09-25") ~ "Test 2",
-      test_date == as.Date("2025-09-30") ~ "Test 3",
-      test_date == as.Date("2025-10-02") ~ "Test 4",
-      test_date == as.Date("2025-10-07") ~ "Test 5",
-      test_date == as.Date("2025-10-09") ~ "Test 6",
+      test_date == as.Date("2025-09-23") ~ "Pre-test",
+      test_date == as.Date("2025-09-25") ~ "Test 1",
+      test_date == as.Date("2025-09-30") ~ "Test 2",
+      test_date == as.Date("2025-10-02") ~ "Test 3",
+      test_date == as.Date("2025-10-07") ~ "Test 4",
+      test_date == as.Date("2025-10-09") ~ "Test 5",
       TRUE ~ as.character(test_date)
     ),
     # Gjør om til kronologisk rekkefølge
-    time_point = factor(time_point, levels = c("Pre-test", "Test 1", "Test 2", "Test 3", "Test 4", "Test 5", "Test 6"))
+    time_point = factor(time_point, levels = c("Pre-test", "Test 1", "Test 2", "Test 3", "Test 4", "Test 5", ""))
   ) %>%
   select(-test_date) %>%
   rename(time = time_point) %>%
@@ -150,7 +150,7 @@ humac_data <- humac_data %>%
 # Tidy datasettet ble lagret som CSV-fil for enkel tilgang til analyse
 write_csv(humac_data, "Data/humac_tidy_data.csv")
 
-
+view(humac_data)
 ```
 
 ## Resultater
@@ -159,20 +159,18 @@ write_csv(humac_data, "Data/humac_tidy_data.csv")
 
 | Tidspunkt | Side | Maksimalt Nm 60°/s | Maksimalt Nm 120°/s | Maksimalt Nm 240°/s |
 |---------------|---------------|---------------|---------------|---------------|
-| **Pre-test** | Høyre | 174 | 159 | 117 |
-| **Pre-test** | Venstre | 178 | 164 | 121 |
-| Test 1 | Høyre | 187 | 159 | 111 |
-| Test 1 | Venstre | 187 | 163 | 114 |
-| Test 2 | Høyre | 224 | 178 | 123 |
-| Test 2 | Venstre | 182 | 151 | 111 |
-| Test 3 | Høyre | 216 | 168 | 126 |
-| Test 3 | Venstre | 174 | 156 | 108 |
-| Test 4 | Høyre | 207 | 163 | 117 |
-| Test 4 | Venstre | 187 | 151 | 114 |
-| Test 5 | Høyre | 203 | 163 | 113 |
-| Test 5 | Venstre | 182 | 153 | 102 |
-| **Test 6** | Høyre | 218 | 175 | 118 |
-| **Test 6** | Venstre | 188 | 151 | 106 |
+| Pre-test | Høyre | 187 | 159 | 111 |
+| Pre-test | Venstre | 187 | 163 | 114 |
+| Test 1 | Høyre | 224 | 178 | 123 |
+| Test 1 | Venstre | 182 | 151 | 111 |
+| Test 2 | Høyre | 216 | 168 | 126 |
+| Test 2 | Venstre | 174 | 156 | 108 |
+| Test 3 | Høyre | 207 | 163 | 117 |
+| Test 3 | Venstre | 187 | 151 | 114 |
+| Test 4 | Høyre | 203 | 163 | 113 |
+| Test 4 | Venstre | 182 | 153 | 102 |
+| **Test 5** | Høyre | 218 | 175 | 118 |
+| **Test 5** | Venstre | 188 | 151 | 106 |
 
 : Det ble utført 3 repetisjoner x 1 serie per hastighet, og tabellen viser høyeste målte dreiemoment per test.
 
@@ -210,12 +208,12 @@ humac_data |>
 
 | Hastighet | Side    | Endring i Nm og % |
 |-----------|---------|-------------------|
-| 60°/s     | Høyre   | +44 (+25.3%)      |
-| 60°/s     | Venstre | +10 (+5.6%)       |
+| 60°/s     | Høyre   | +31 (+16.6%)      |
+| 60°/s     | Venstre | +1(0.5%)          |
 | 120°/s    | Høyre   | +16 (+10.1%)      |
-| 120°/s    | Venstre | -12 (-7.9%)       |
-| 240°/s    | Høyre   | +1 (+0.9%)        |
-| 240°/s    | Venstre | -15 (-14.2%)      |
+| 120°/s    | Venstre | -12 (-7.4%)       |
+| 240°/s    | Høyre   | +7 (+6.3%)        |
+| 240°/s    | Venstre | -8(-7%)           |
 
 ### Variasjonskoeffisient
 
@@ -240,18 +238,18 @@ humac_data |>
 
 | Hastighet | Side    | Gjennomsnitt (Nm) | SD (Nm) | CV(%) |
 |-----------|---------|-------------------|---------|-------|
-| 60°/s     | Høyre   | 204               | 18      | 8.81  |
-| 60°/s     | Venstre | 183               | 5.22    | 2.86  |
-| 120°/s    | Høyre   | 166               | 7.57    | 4.55  |
-| 120°/s    | Venstre | 156               | 5.71    | 3.67  |
-| 240°s     | Høyre   | 118               | 5.24    | 4.45  |
-| 240°s     | Venstre | 111               | 6.23    | 5.62  |
+| 60°/s     | Høyre   | 209.2             | 13.2    | 6.3   |
+| 60°/s     | Venstre | 183.3             | 5.3     | 2.9   |
+| 120°/s    | Høyre   | 167.7             | 7.5     | 4.5   |
+| 120°/s    | Venstre | 154.2             | 4.8     | 3.1   |
+| 240°s     | Høyre   | 118               | 5.7     | 4.9   |
+| 240°s     | Venstre | 109.1             | 4.8     | 4.4   |
 
 ### Limb symmetry index
 
 "Limb symmetry index" (LSI) er et forholdstall mellom verdien til den svakere ekstremiteten og den sterkere ekstremiteten, multiplisert med 100 for å uttrykke forholdet som en prosent (Impellizeri et al., 2008). Følgende verdier blir kalkulert med formelen (svakere ben / sterkere ben) \* 100 for hver test.
 
-Ved pre-test, viste høyre ben et marginalt høyere maksimalt dreiemoment enn venstre (LSI = 97,7% ved 60 °/s). Etter treningsperioden, ble styrkeforskjellen betraktelig større mellom høyre og venstre ben (LSI = 86,2% ved 60 °/s).
+Ved pre-test, målte høyre og venstre ben symmetrisk maksimalt dreiemoment (LSI = 100% ved 60 °/s). Etter treningsperioden, ble styrkeforskjellen betraktelig større mellom høyre og venstre ben (LSI = 86,2% ved 60 °/s).
 
 ## Diskusjon
 

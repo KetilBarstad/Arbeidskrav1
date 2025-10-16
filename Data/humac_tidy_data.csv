@@ -1,43 +1,37 @@
 time,speed,parameter,side,exercise,Newtonmetres
-Test 4,60,peak_torque,right,extension,207
-Test 4,60,peak_torque,left,extension,187
+Test 3,60,peak_torque,right,extension,207
+Test 3,60,peak_torque,left,extension,187
+Test 3,120,peak_torque,right,extension,163
+Test 3,120,peak_torque,left,extension,151
+Test 3,240,peak_torque,right,extension,117
+Test 3,240,peak_torque,left,extension,114
+Test 4,60,peak_torque,right,extension,203
+Test 4,60,peak_torque,left,extension,182
 Test 4,120,peak_torque,right,extension,163
-Test 4,120,peak_torque,left,extension,151
-Test 4,240,peak_torque,right,extension,117
-Test 4,240,peak_torque,left,extension,114
-Test 5,60,peak_torque,right,extension,203
-Test 5,60,peak_torque,left,extension,182
-Test 5,120,peak_torque,right,extension,163
-Test 5,120,peak_torque,left,extension,153
-Test 5,240,peak_torque,right,extension,113
-Test 5,240,peak_torque,left,extension,102
-Test 6,60,peak_torque,right,extension,218
-Test 6,60,peak_torque,left,extension,188
-Test 6,120,peak_torque,right,extension,175
-Test 6,120,peak_torque,left,extension,151
-Test 6,240,peak_torque,right,extension,118
-Test 6,240,peak_torque,left,extension,106
-Pre-test,60,peak_torque,right,extension,174
-Pre-test,60,peak_torque,left,extension,178
+Test 4,120,peak_torque,left,extension,153
+Test 4,240,peak_torque,right,extension,113
+Test 4,240,peak_torque,left,extension,102
+Test 5,60,peak_torque,right,extension,218
+Test 5,60,peak_torque,left,extension,188
+Test 5,120,peak_torque,right,extension,175
+Test 5,120,peak_torque,left,extension,151
+Test 5,240,peak_torque,right,extension,118
+Test 5,240,peak_torque,left,extension,106
+Pre-test,60,peak_torque,right,extension,187
+Pre-test,60,peak_torque,left,extension,187
 Pre-test,120,peak_torque,right,extension,159
-Pre-test,120,peak_torque,left,extension,164
-Pre-test,240,peak_torque,right,extension,117
-Pre-test,240,peak_torque,left,extension,121
-Test 1,60,peak_torque,right,extension,187
-Test 1,60,peak_torque,left,extension,187
-Test 1,120,peak_torque,right,extension,159
-Test 1,120,peak_torque,left,extension,163
-Test 1,240,peak_torque,right,extension,111
-Test 1,240,peak_torque,left,extension,114
-Test 2,60,peak_torque,right,extension,224
-Test 2,60,peak_torque,left,extension,182
-Test 2,120,peak_torque,right,extension,178
-Test 2,120,peak_torque,left,extension,151
-Test 2,240,peak_torque,right,extension,123
-Test 2,240,peak_torque,left,extension,111
-Test 3,60,peak_torque,right,extension,216
-Test 3,60,peak_torque,left,extension,174
-Test 3,120,peak_torque,right,extension,168
-Test 3,120,peak_torque,left,extension,156
-Test 3,240,peak_torque,right,extension,126
-Test 3,240,peak_torque,left,extension,108
+Pre-test,120,peak_torque,left,extension,163
+Pre-test,240,peak_torque,right,extension,111
+Pre-test,240,peak_torque,left,extension,114
+Test 1,60,peak_torque,right,extension,224
+Test 1,60,peak_torque,left,extension,182
+Test 1,120,peak_torque,right,extension,178
+Test 1,120,peak_torque,left,extension,151
+Test 1,240,peak_torque,right,extension,123
+Test 1,240,peak_torque,left,extension,111
+Test 2,60,peak_torque,right,extension,216
+Test 2,60,peak_torque,left,extension,174
+Test 2,120,peak_torque,right,extension,168
+Test 2,120,peak_torque,left,extension,156
+Test 2,240,peak_torque,right,extension,126
+Test 2,240,peak_torque,left,extension,108
