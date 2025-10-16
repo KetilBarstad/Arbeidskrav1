@@ -49,7 +49,7 @@ Testprotokollen vår tok utgangspunkt i "ReLieF"-protokollen. Denne protokollen 
 
 *Alle oppvarmingene og testene starter med høyre ben*
 
-| Hastighet | Oppvarming | Pause mellom oppvarming og test | Test | Pause mellom test (sekunder) |
+| Hastighet | Oppvarming (repetisjoner) | Pause mellom oppvarming og test (sekunder) | Test | Pause mellom test |
 |---------------|---------------|---------------|---------------|---------------|
 | 60 °/ | 3 | 30 | 3 | 60 |
 | 120 °/ | 3 | 30 | 3 | 60 |
@@ -57,7 +57,7 @@ Testprotokollen vår tok utgangspunkt i "ReLieF"-protokollen. Denne protokollen 
 
 ### Treningsprogrammet
 
-Oppstartstidspunktet for treningsintervensjonen var 23.09.25. Deltakeren utførte en tilvenningsøkt 20.09.25.:
+Oppstartstidspunktet for treningsintervensjonen var 23.09.25. Deltakeren utførte en tilvenningsøkt 20.09.25.
 
 Treningsprogrammet bestod av to ukentlige styrketreningsøkter over en 3-ukers periode, og ble gjennomført på tirsdager og torsdager. Hver økt ble utført cirka en time etter utført isokinetisk testing. Når øvre grense for repetisjonsområde ble nådd innenfor det angitte RIR målet, ble motstanden økt med 5%.
 
