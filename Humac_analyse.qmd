@@ -1,9 +1,9 @@
 ---
-title: "Effekten av styrketrening på isokinetisk kneekstensjon: En 3-ukers case-studie"
+title: "Effekten av styrketrening på maksimalt dreiemoment i kneekstensjon: En 3-ukers case-studie"
 author: "Ketil B., Laurits H., Herman E. og Theodor S."
 date: 10/09/25
 format:
-  html:
+  pdf:
     toc: true
     toc-location: right
     toc-title: "Innhold"
